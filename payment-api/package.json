@@ -1,0 +1,50 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "crud API em Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js, -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JooMello/crud.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "crud",
+    "azure-functins",
+    "express",
+    "github-action",
+    "swa",
+    "serverless",
+    "azure",
+    "postgresql",
+    "sql",
+    "javascript"
+  ],
+  "author": "Pão Queimado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JooMello/crud/issues"
+  },
+  "homepage": "https://github.com/JooMello/crud#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.1",
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "pg": "^8.7.3"
+  }
+}
