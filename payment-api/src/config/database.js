@@ -27,3 +27,8 @@ pool.on("connect", () => {
 module.exports = {
   query: (text, params) => pool.query(text, params),
 };
+
+let timerInterval;
+Swal.fire({
+  title: "Auto close alert",
+});
