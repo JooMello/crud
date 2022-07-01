@@ -10,8 +10,8 @@ const cors = require("cors");
 const app = express();
 
 // ==> Rotas da API (payment):
-const index = require("./routers/index");
-const paymentRouter = require("./routers/payment.routes");
+const index = require("./routes/index");
+const paymentRoute = require("./routes/payment.routes");
 
 app.use(express.urlencoded({ extend: true }));
 app.use(express.json());
@@ -19,6 +19,8 @@ app.use(express.json({ type: "application/vnd.api+json" }));
 app.use(cors());
 
 app.use(index);
-app.use("/api/, paymentRouter");
+app.use("/api/", paymentRoute);
+
+
 
 module.exports = app;

@@ -12,7 +12,7 @@ dotenv.config();
 // ==> Conexão com a Base de Dados:
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL
 });
 
 pool.on("error", (err, client) => {
@@ -27,8 +27,3 @@ pool.on("connect", () => {
 module.exports = {
   query: (text, params) => pool.query(text, params),
 };
-
-let timerInterval;
-Swal.fire({
-  title: "Auto close alert",
-});
